@@ -1,0 +1,31 @@
+{
+  "name": "bloco-de-notas",
+  "productName": "Anotações",
+  "version": "1.0.0",
+  "description": "Editor de texto/Bloco de notas",
+  "author": "Gustavo Matera",
+  "license": "ISC",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --ext js,css,html --exec electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.gm.blocodenotas",
+    "productName": "Anotações",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "Bloco de Notas"
+    },
+    "icon": "Assets/icons/win/icon"
+  },
+  "devDependencies": {
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Bloco de Notas</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="Assets/icons/png/256x256.png">
+        <script defer src="renderer.js"></script>
+    </head>
+    <body>
+        <!--Barra superior-->
+        <div id="menu">
+            <i></i>
+            <button class="context" id="save">Salvar</button>
+            <button class="context" id="load">Carregar</button>
+            <div id="drag"></div>
+            <button class="winBTN" id="min">-</button>
+            <button class="winBTN" id="max">O</button>
+            <button class="winBTN" id="close">X</button>
+        </div>
+        <main>
+            <!--Lista de Arquivos-->
+            <nav>
+                <button id="0" class="navBtnON"></button>
+                <button id="new">+</button>
+                <button class="closeTab" id="close0" style="top:15px">X</button>
+            </nav>
+
+            <!--Separador-->
+            <div id="mid"></div>
+
+            <!--Área de escrita-->
+            <textarea id="input" spellcheck="false"
+                placeholder="..." autofocus></textarea>
+        </main>
+        </div>
+    </body>
+</html>
